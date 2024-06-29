@@ -38,15 +38,26 @@ export default {
       selectedBook: null
     }
   },
+  mounted() {
+    // Load books from localStorage
+    const storedBooks = localStorage.getItem('books');
+    if (storedBooks) {
+      this.books = JSON.parse(storedBooks);
+    }
+  },
   methods: {
     addBook(newBook) {
       this.books.push(newBook);
+      // Save books to localStorage
+      localStorage.setItem('books', JSON.stringify(this.books));
     },
     viewBook(book) {
       this.selectedBook = book;
     },
     deleteBook(bookId) {
       this.books = this.books.filter(book => book.id !== bookId);
+      // Save books to localStorage
+      localStorage.setItem('books', JSON.stringify(this.books));
       if (this.selectedBook && this.selectedBook.id === bookId) {
         this.selectedBook = null;
       }

@@ -1,9 +1,9 @@
 <template>
-    <div>
-      <form @submit.prevent="addBook" class="space-y-4">
+    <div style="background-color: lightgray">
+      <form @submit.prevent="addBook" class="space-y-4 space-x-4">
         <div>
           <label for="title" class="block text-gray-700 font-bold mb-2">Title:</label>
-          <input v-model="title" id="title" required class="border border-gray-300 rounded-lg p-2 w-full focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200">
+          <input v-model="title" id="title" required class="border border-gray-300 rounded-lg p-2 w-full focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200" style="">
         </div>
         <div>
           <label for="author" class="block text-gray-700 font-bold mb-2">Author:</label>

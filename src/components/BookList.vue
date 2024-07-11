@@ -1,6 +1,6 @@
 <template>
     <div>
-      <h3 class="text-2xl font-semibold text-indigo-600 mb-6">List Buku Tersedia</h3>
+      <h3 class="text-2xl font-semibold text-indigo-600 mb-6">Book List Available Now</h3>
       <ul class="divide-y divide-gray-200">
         <li v-for="book in books" :key="book.id" class="flex justify-between items-center py-4">
           <div class="text-gray-800">

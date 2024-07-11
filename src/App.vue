@@ -67,6 +67,11 @@ export default {
 </script>
 
 <style>
+body {
+  background: url('assets/Gambar.jpg') no-repeat center center;
+  background-size: cover;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -77,9 +82,10 @@ export default {
 
 .container {
   max-width: 900px;
+  width: 700px;
   margin: 0 auto;
   padding: 40px;
-  background-color: #f0f0f0;
+  background-color: #f0f0f0e8;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   overflow-y: auto; /* Tambahkan overflow-y untuk scroll vertikal jika perlu */
@@ -127,7 +133,7 @@ p {
 }
 
 .bg-green-600 {
-  background-color: #45a049;
+  background-color: #3c74a8;
 }
 
 .text-white {
